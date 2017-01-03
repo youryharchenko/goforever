@@ -1,6 +1,3 @@
-// goforever - processes management
-// Copyright (c) 2013 Garrett Woodworth (https://github.com/gwoo).
-
 package main
 
 import (

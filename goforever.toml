@@ -7,21 +7,30 @@ logfile = "goforever.log"
 errfile = "goforever.log"
 
 [[process]]
-name = "example-panic"
-command = "./example/example-panic"
-pidfile = "example/example-panic.pid"
-logfile = "example/logs/example-panic.debug.log"
-errfile = "example/logs/example-panic.errors.log"
-respawn = 1
+name = "hello8080"
+command = "./example/hello8080"
+pidfile = "example/hello8080.pid"
+logfile = "example/hello8080.debug.log"
+errfile = "example/hello8080.errors.log"
+respawn = 10
 delay = "1m"
 ping = "30s"
 
 [[process]]
-name = "example"
-command = "./example/example"
-args = ["-name=foo"]
-pidfile = "example/example.pid"
-logfile = "example/logs/example.debug.log"
-errfile = "example/logs/example.errors.log"
-respawn = 1
+name = "hello8081"
+command = "./example/hello8081"
+pidfile = "example/hello8081.pid"
+logfile = "example/hello8081.debug.log"
+errfile = "example/hello8081.errors.log"
+respawn = 10
+delay = "1m"
+ping = "30s"
 
+#[[process]]
+#name = "example"
+#command = "./example/example"
+#args = ["-name=foo"]
+#pidfile = "example/example.pid"
+#logfile = "example/logs/example.debug.log"
+#errfile = "example/logs/example.errors.log"
+#respawn = 1
